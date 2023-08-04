@@ -14,6 +14,8 @@ All python projects that use pip packages should be set up to use a virtual envi
 
 ## Basic Virtual Environment Setup
 
+In addition to this guide, refer to the [ptyhon docs on venv](https://docs.python.org/3/library/venv.html) and the [pip docs on requirements files](https://pip.pypa.io/en/stable/user_guide/#requirements-files).
+
 * Create a project directory and cd into it
 * run `pyhton3 -m venv venv` to make a virtual environment in a directory named `venv`
   * _note_ the anatomy of this command is `python3 -m venv < directory name >`. Try experiment with different directory names once you are comfortable with this process!   
@@ -21,14 +23,14 @@ All python projects that use pip packages should be set up to use a virtual envi
   * on mac/linux/WSL use `source venv/bin/activate` (any unix-based terminal)
   * (on **non-WSL** windows use `. venv/Scripts/activate`)
 * make sure your virtual environment is active: `(venv)` can be seen in your terminal (if you are using a themed oh-my-zsh terminal that supports this display).
-* install the needed pip packages for the project (pip3 install < package name >`)
+* install the needed pip packages for the project (`pip3 install < package name >`)
 * once all your packages are installed, freeze the pip list in a requirements.text file
   * use the command `pip freeze > requirements.txt`
   * this needs to be done again if you add more pip packages to update the requirements.txt
   * if you clone a python project from github, you can use `pip install -r requirements.txt` to install the needed packages
 * you can use the command `deactivate` to leave the virtual environment
 * every time you want to work on a python project with a virtual environment, you will need to activate it first
-* if you clone a repo from github with a virtual environment first install the needed packages with `pip install -r requirements.txt` and then run `. venv/bin/activate` (`. venv/Scripts/activate` on windows) to start the virtual environment
+* if you clone a repo from github with a virtual environment first install the needed packages with `pip install -r requirements.txt` and then run `source venv/bin/activate` (`. venv/Scripts/activate` on windows) to start the virtual environment.
 
 ## Virtual Environments with git
 
