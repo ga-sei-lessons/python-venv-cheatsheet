@@ -1,4 +1,4 @@
-# Python venv CCheatsheet 🐍
+# Python venv Cheatsheet 🐍
 
 Step by step breakdown of setting up a virtual environment for python project dependancy management
 
