@@ -42,7 +42,7 @@ Although it is not requed to add `__pycache__` to your `.gitignore` for this to 
 
 ## Adding oh-my-zsh themes 
 
-If you do not have an `oh-muy-zsh` theme that supports the `(venv)` display when in a virtual enviroment you can do the following:
+If you do not have an `oh-my-zsh` theme that supports the `(venv)` display when in a virtual enviroment you can do the following:
 
 * install [oh-my-zh](https://ohmyz.sh/#install) if you don't have it (skip this step if you do).
 * open your `zsh` config file with `code ~/.zshrc` to edit it.
